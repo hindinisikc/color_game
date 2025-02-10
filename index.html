@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Click Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="timer-container">
+        Time Left: <span id="gameTimer">10</span> sec
+    </div>
+
+    <div class="score-container">
+        Score: <span id="score">0</span>
+    </div>
+
+    <div class="container">
+        <div class="box red" onclick="selectColor('red')"></div>
+        <div class="box blue" onclick="selectColor('blue')"></div>
+        <div class="box green" onclick="selectColor('green')"></div>
+    </div>
+
+    <div class="selected-color-box" id="selectedColorBox">?</div>
+
+    <button id="startButton" onclick="startGame()">Start Game</button>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
